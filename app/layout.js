@@ -8,6 +8,7 @@ import Footer from "@/components/footer";
 export const metadata = {
   title: "Home | BrickBlocks",
   description: "Ecomerce admin panel",
+  content:"width=device-width, initial-scale=1"
 };
 
 
