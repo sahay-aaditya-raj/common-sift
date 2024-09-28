@@ -7,17 +7,22 @@ export async function GET(req) {
         await connectMongoDB();
         const url = new URL(req.url);
         const imageId = url.searchParams.get("id");
+        
         if (!imageId) {
             return NextResponse.json({ message: "Image ID is required" }, { status: 400 });
         }
+
         const image = await Image.findById(imageId);
         if (!image) {
             return NextResponse.json({ message: "Image not found" }, { status: 404 });
         }
-        return new NextResponse(image.image.buffer, {
+
+        // Convert the buffer to a Blob for better compatibility
+        const imageBuffer = Buffer.from(image.image.buffer);
+        return new NextResponse(imageBuffer, {
             headers: {
                 "Content-Type": image.contentType,
-                "Content-Length": image.image.buffer.length
+                "Content-Length": imageBuffer.length
             }
         });
     } catch (error) {
