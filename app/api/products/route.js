@@ -11,7 +11,7 @@ export async function GET(req) {
             const product = await Product.findById(id);
             return NextResponse.json({ message: "Data Provided", data: product }, { status: 200 });
         } else {
-            const products = await Product.find({},'_id name price');
+            const products = await Product.find({},'_id name price s_price');
             return NextResponse.json({ message: "Data Provided", data: products }, { status: 200 });
         }
     } catch (error) {

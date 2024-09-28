@@ -11,6 +11,11 @@ const productSchema = new Schema(
             type: String,
             required: true
         },
+        s_price: {
+            type: String,
+            required: true,
+            default: "0"
+        },
         desc: {
             type: String,
             required: true

@@ -11,7 +11,7 @@ export default function CategoryItems(){
         .then(data=>{setData(data.data);console.log(data.data)})
     },[])
     return(
-        <div className="w-full flex justify-center">
+        <div className="w-full hidden md:flex justify-center">
           <div className="lg:w-5/6 p-2">
             <h1 id='Categories' className="text-3xl font-bold mt-6">Categories</h1>
             {(Object.keys(data).length > 0)?(Object.keys(data).map((title,i)=>{
