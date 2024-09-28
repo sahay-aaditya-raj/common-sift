@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
 
 export async function generateMetadata() {
   return {
-    title: 'Home | BrickBlocks',
+    title: 'Home | Common Sift',
     description: 'Explore our product catalog.',
   };
 }
