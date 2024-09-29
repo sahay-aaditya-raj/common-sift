@@ -18,7 +18,7 @@ export default function Header() {
                         <div className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                             <ul className="flex flex-col mt-2 space-y-2 text-lg">
                                 <li><a href="/#AllProducts">All Products</a></li>
-                                <li><a href="/#Categories">Categories</a></li>
+                                <li><a href="/#">Categories</a></li>
                                 <li>Account</li>
                                 <li>Cart</li>
                             </ul>
@@ -28,7 +28,7 @@ export default function Header() {
                     {/* Desktop Menu */}
                     <ul className="hidden md:flex space-x-6 text-lg">
                         <li><a href="/#AllProducts" className="hover:underline">All Products</a></li>
-                        <li><a href="/#Categories" className="hover:underline">Categories</a></li>
+                        <li><a href="/#" className="hover:underline">Categories</a></li>
                         <li>Account</li>
                         <li>Cart</li>
                     </ul>

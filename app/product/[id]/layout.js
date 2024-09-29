@@ -19,17 +19,17 @@ export async function generateMetadata({ params }) {
         description: `Explore the details of ${data.data.name}.`,
       };
     } else {
+      console.log('E')
       return {
         title: 'Error | Common Sift',
         description: 'Unable to fetch product details.',
       };
     }
     }catch(e){
+      console.log(e)
       return {
         title: 'Error | Common Sift',
         description: 'Unable to fetch product details.',
       };
     }
-    
   }
-  

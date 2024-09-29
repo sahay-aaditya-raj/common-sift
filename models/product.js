@@ -31,6 +31,7 @@ const productSchema = new Schema(
 productSchema.pre('findOneAndDelete', async function(next) {
     const product = await this.model.findOne(this.getQuery());
     await Image.deleteMany({ productId: product._id });
+    await Count.deleteMany({ productId: product._id });
     next();
 });
 

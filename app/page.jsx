@@ -1,15 +1,12 @@
 "use client";
 
-import { useSession } from "next-auth/react";
 import CusSlider from "@/components/slider/slider";
 import Products from "@/components/Products/allProducts";
-import CategoryItems from "@/components/categories/categoryItems";
+
 import { useMediaQuery } from 'react-responsive'
 
 export default function Home() {
-  const { data: session, status } = useSession();
-  console.log(session);
-  console.log(status);
+
   const isMobile = useMediaQuery({ query: '(max-width: 768px)' });
   return (
     <div className="flex-grow">
@@ -24,7 +21,6 @@ export default function Home() {
             <Products/>
           </div>
       </div>
-      <CategoryItems/>
     </div>
   );
 }

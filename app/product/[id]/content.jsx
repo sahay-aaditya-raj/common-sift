@@ -20,10 +20,14 @@ export default function Content({ data }) {
     <div className="p-2">
       <h1 className="font-bold text-2xl capitalize">{data?.name}</h1>
       <div className="mt-2">
-        <p className="text-lg text-gray-600">Price: ₹ {discount?
-          <>
-            <div className="diagonal-text relative inline">{data.price}</div><div className='ms-2 inline font-bold'>{price}</div>  <div className='font-bold text-red-600'>{discount}% off</div></>
-          :`${data.price}`}</p>
+      <div className="text-lg text-gray-600">Price: ₹ {discount ?
+        <>
+          <span className="diagonal-text relative inline">{data.price}</span>
+          <span className='ms-2 inline font-bold'>{price}</span>
+          <div className='font-bold text-red-600'>{discount}% off</div>
+        </>
+        : `${data.price}`}
+    </div>
         <p className="text-lg text-gray-600">Category: {data?.category}</p>
         <p className="text-lg text-gray-600">Description: {data?.desc}</p>
       </div>

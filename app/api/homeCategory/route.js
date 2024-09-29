@@ -14,7 +14,7 @@ export async function GET(req){
             const products = await Product.find({ category: category.name });
             productObject[category.name] = products;
             }
-        // console.log(productObject);
+        // (productObject);
         return NextResponse.json({message:"Success", data:productObject},{status: 200})
     } catch(e) {
         console.log(e)

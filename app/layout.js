@@ -1,10 +1,10 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-import { AuthProvider } from "./Providers";
+
 const inter = Inter({ subsets: ["latin"] });
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 // export const metadata = {
 //   title: "Home | BrickBlocks",
 //   description: "Ecomerce admin panel",
@@ -16,8 +16,8 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+
       <body className={`bg-zinc-100 ${inter.className}`}>
-        <AuthProvider>
           <div className="flex flex-col min-h-screen max-h-screen">
             {/* Top Navbar */}
             <Header />
@@ -28,7 +28,7 @@ export default function RootLayout({ children }) {
             {/* Footer */}
             <Footer />
           </div>
-        </AuthProvider>
+          <ScrollToTopButton/>
       </body>
     </html>
   );
