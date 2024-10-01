@@ -16,11 +16,11 @@ export default function ImageHolder({ imagesIDs }) {
 
   return (
     <div className="flex flex-col items-center lg:p-2 p-1">
-      <div className="p-1 w-full">
+      <div className="p-1 w-full flex justify-center items-center">
         <img
           src={disPlayImage}
           alt="Display"
-          className="w-full rounded-md object-cover aspect-square"
+          className="w-4/5 rounded-md object-cover aspect-square"
         />
       </div>
       <div className="flex overflow-x-auto space-x-2 p-1 overflow-y-hidden ">
