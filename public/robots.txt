@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://common-sift.vercel.app/
+
+# Sitemaps
+Sitemap: https://common-sift.vercel.app/sitemap.xml
