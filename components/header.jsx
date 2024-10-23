@@ -58,7 +58,7 @@ export default function Header() {
                                         </button>
                                     </div>
                                 </li>
-                                <li><a href="/#AllProducts">All Products</a></li>
+                                <li><a href="/categories">Categories</a></li>
                                 <li><a href="/coming">Account</a></li>
                                 <li><a href="/coming">Cart</a></li>
                             </ul>
@@ -84,7 +84,7 @@ export default function Header() {
                                 </button>
                             </div>
                         </li>
-                        <li><a href="/#AllProducts" className="hover:underline">All Products</a></li>
+                        <li><a href="/categories">Categories</a></li>
                         <li><a href="/coming">Account</a></li>
                         <li><a href="/coming">Cart</a></li>
                     </ul>

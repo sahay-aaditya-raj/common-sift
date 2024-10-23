@@ -7,7 +7,7 @@ export default function ProductCard({product}){
         price = price - (price * discount / 100)
     }
     return(
-        <div className="bg-white shadow-md rounded-lg overflow-hidden">
+        <div className="bg-white shadow-md rounded-lg overflow-hidden hover:scale-[1.02] transition-all duration-300">
             <img src={`/api/productCardImage?id=${product._id}`} alt={product.name} className="w-full h-48 object-cover"/>
             <div className="p-4">
             <h3 className="text-lg font-semibold capitalize text-clip truncate max-w-xs" title={product.name}>{text}</h3>
