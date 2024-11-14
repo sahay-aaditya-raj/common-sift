@@ -9,7 +9,7 @@ import ScrollToTopButton from "@/components/ScrollToTopButton";
 // Add your metadata
 export async function generateMetadata() {
   return {
-    title: 'Home | Common Shift',
+    title: 'Home | Common Sift',
     description: 'Explore our product catalog.',
     verification: {
       google: "SfqKenUzEAaGPY7luTx_A0vmXo3-M4IATYMu4NF_mB0",

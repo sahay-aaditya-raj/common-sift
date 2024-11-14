@@ -15,20 +15,20 @@ export async function generateMetadata({ params }) {
     if (res.status === 200) {
       const data = await res.json();
       return {
-        title: `${data.data.name} | Common Shift`,
+        title: `${data.data.name} | Common Sift`,
         description: `Explore the details of ${data.data.name}.`,
       };
     } else {
       console.log('E')
       return {
-        title: 'Error | Common Shift',
+        title: 'Error | Common Sift',
         description: 'Unable to fetch product details.',
       };
     }
     }catch(e){
       console.log(e)
       return {
-        title: 'Error | Common Shift',
+        title: 'Error | Common Sift',
         description: 'Unable to fetch product details.',
       };
     }
