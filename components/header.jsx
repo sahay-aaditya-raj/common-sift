@@ -38,7 +38,7 @@ export default function Header() {
                 <div className="flex w-full lg:w-5/6 justify-between items-center">
                     {/* Logo and mobile menu */}
                     <div className="flex flex-col">
-                        <a href="/" className="font-semibold text-3xl md:text-4xl">Common Sift</a>
+                        <a href="/" className="font-semibold text-3xl md:text-4xl">Common Shift</a>
                         <div className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
                             <ul className="flex flex-col mt-2 space-y-2 text-lg">
                                 <li>

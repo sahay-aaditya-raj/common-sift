@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://common-sift.vercel.app/
+Host: https://common-shift.vercel.app/
 
 # Sitemaps
-Sitemap: https://common-sift.vercel.app/sitemap.xml
+Sitemap: https://common-shift.vercel.app/sitemap.xml
